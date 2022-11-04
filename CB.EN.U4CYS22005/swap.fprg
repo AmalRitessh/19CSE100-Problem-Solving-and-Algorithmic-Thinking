@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:55:46 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTA0OzEwOjAzOjA2IEFNOzMwNDQ="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTA0OzEwOjU1OjQ2IEFNOzY7MzE2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="this program is used to swap the two values of variable"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter value a:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter value b:&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="a" expression="(a+b)-a"/>
+            <assign variable="b" expression="a/b"/>
+            <output expression="&quot;present value of a:&quot;" newline="True"/>
+            <output expression="a" newline="True"/>
+            <output expression="&quot;present value of b:&quot;" newline="True"/>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:54:51 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTA0OzA5OjMyOjA5IEFNOzMwNTc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTA0OzEwOjU0OjUxIEFNOzc7MzE2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="quadratic formula "/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="root" type="Integer" array="False" size=""/>
+            <declare name="nroot" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter value of a:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter value of b:&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;enter value of c&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="root" expression="(-b+(b^2-4*a*c)^0.5)/2*a"/>
+            <assign variable="nroot" expression="(-b-(b^2-4*a*c)^0.5)/2*a"/>
+            <output expression="&quot;the roots is:&quot;" newline="True"/>
+            <output expression="root" newline="True"/>
+            <output expression="nroot" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

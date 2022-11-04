@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:54:34 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTA0OzA5OjA0OjUzIEFNOzMwNTU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTA0OzEwOjU0OjM0IEFNOzc7MzE2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="this program is used to convet fahrenheit to celsius"/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <declare name="F" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Temp in Fahrenheit:&quot;" newline="True"/>
+            <input variable="F"/>
+            <assign variable="C" expression="(F-32)*5/9"/>
+            <output expression="&quot;Temp in celsius:&quot;" newline="True"/>
+            <output expression="C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:53:39 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTA0OzA5OjA0OjUzIEFNOzMwNTU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTA0OzEwOjUzOjM5IEFNOzQ7MzE2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="this program is used to conver celsius to fahrenhiet&#13;&#10;"/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <declare name="F" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Temp in celsius:&quot;" newline="True"/>
+            <input variable="C"/>
+            <assign variable="F" expression="9/5*C+32"/>
+            <output expression="&quot;Temp in Fahrenheit:&quot;" newline="True"/>
+            <output expression="F" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

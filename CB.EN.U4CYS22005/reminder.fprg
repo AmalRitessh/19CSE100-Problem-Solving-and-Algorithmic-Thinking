@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:52:53 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTA0OzEwOjQxOjAxIEFNOzMwNDE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTA0OzEwOjUyOjUzIEFNOzM7MzE2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="this program is used to find the reminder with out &quot;%&quot;"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="quation" type="Integer" array="False" size=""/>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <declare name="reminder" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter divident:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter divisor:&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="quation" expression="a/b"/>
+            <assign variable="r" expression="b*quation"/>
+            <assign variable="reminder" expression="a-r"/>
+            <output expression="&quot;the remiander is:&quot;" newline="True"/>
+            <output expression="reminder" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
