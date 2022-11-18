@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 09:47:06 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTE4OzA5OjA5OjQ4IEFNOzMwNjk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTE4OzA5OjQ3OjA2IEFNOzI7MzE3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="accountno" type="Integer" array="False" size=""/>
+            <declare name="pin" type="Integer" array="False" size=""/>
+            <declare name="balance" type="Real" array="False" size=""/>
+            <output expression="&quot;enter account no:&quot;" newline="True"/>
+            <input variable="accountno"/>
+            <output expression="&quot;enter ur pin:&quot;" newline="True"/>
+            <input variable="pin"/>
+            <if expression="accountno=01 and pin=1234">
+                <then>
+                    <assign variable="balance" expression="10000"/>
+                    <declare name="responce" type="String" array="False" size=""/>
+                    <output expression="&quot;do u want to withdraw (y/n)&quot;" newline="True"/>
+                    <input variable="responce"/>
+                    <if expression="responce=&quot;y&quot;">
+                        <then>
+                            <declare name="wamount" type="Real" array="False" size=""/>
+                            <declare name="bamount" type="Real" array="False" size=""/>
+                            <output expression="&quot;your present balance&quot;" newline="True"/>
+                            <output expression="balance" newline="True"/>
+                            <output expression="&quot;enter amount to withdraw:&quot;" newline="True"/>
+                            <input variable="wamount"/>
+                            <if expression="wamount&lt;balance-1000">
+                                <then>
+                                    <assign variable="bamount" expression="balance-wamount"/>
+                                    <output expression="&quot;your current balance&quot;" newline="True"/>
+                                    <output expression="bamount" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;withdraw amount execeed minium balance&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="accountno=02 and pin=2234">
+                        <then>
+                            <assign variable="balance" expression="20000"/>
+                            <declare name="responce" type="String" array="False" size=""/>
+                            <output expression="&quot;do u want to withdraw (y/n)&quot;" newline="True"/>
+                            <input variable="responce"/>
+                            <if expression="responce=&quot;y&quot;">
+                                <then>
+                                    <declare name="wamount" type="Real" array="False" size=""/>
+                                    <declare name="bamount" type="Real" array="False" size=""/>
+                                    <output expression="&quot;your present balance&quot;" newline="True"/>
+                                    <output expression="balance" newline="True"/>
+                                    <output expression="&quot;enter amount to withdraw:&quot;" newline="True"/>
+                                    <input variable="wamount"/>
+                                    <if expression="wamount&lt;balance-1000">
+                                        <then>
+                                            <assign variable="bamount" expression="balance-wamount"/>
+                                            <output expression="&quot;your current balance&quot;" newline="True"/>
+                                            <output expression="bamount" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;withdraw amount execeed minium balance&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="accountno=03 and pin=3234">
+                                <then>
+                                    <assign variable="balance" expression="15000"/>
+                                    <declare name="responce" type="String" array="False" size=""/>
+                                    <output expression="&quot;do u want to withdraw (y/n)&quot;" newline="True"/>
+                                    <input variable="responce"/>
+                                    <if expression="responce=&quot;y&quot;">
+                                        <then>
+                                            <declare name="wamount" type="Real" array="False" size=""/>
+                                            <declare name="bamount" type="Real" array="False" size=""/>
+                                            <output expression="&quot;your present balance&quot;" newline="True"/>
+                                            <output expression="balance" newline="True"/>
+                                            <output expression="&quot;enter amount to withdraw:&quot;" newline="True"/>
+                                            <input variable="wamount"/>
+                                            <if expression="wamount&lt;balance-1000">
+                                                <then>
+                                                    <assign variable="bamount" expression="balance-wamount"/>
+                                                    <output expression="&quot;your current balance&quot;" newline="True"/>
+                                                    <output expression="bamount" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;withdraw amount execeed minium balance&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;please enter correct user name and password&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

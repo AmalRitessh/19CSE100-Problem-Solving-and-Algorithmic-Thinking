@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:52:04 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTE4OzA5OjA5OjQ4IEFNOzMwNjk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MzsyMDIyLTExLTE4OzEwOjUyOjA0IEFNOzIwOzMyMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <declare name="threeopin" type="Integer" array="False" size=""/>
+            <assign variable="threeopin" expression="3234"/>
+            <declare name="twoopin" type="Integer" array="False" size=""/>
+            <assign variable="twoopin" expression="2234"/>
+            <declare name="oneopin" type="Integer" array="False" size=""/>
+            <assign variable="oneopin" expression="1234"/>
+            <while expression="a=1">
+                <declare name="accountno" type="Integer" array="False" size=""/>
+                <declare name="balance" type="Real" array="False" size=""/>
+                <output expression="&quot;enter account no:&quot;" newline="True"/>
+                <input variable="accountno"/>
+                <if expression="accountno=01">
+                    <then>
+                        <declare name="pin" type="Integer" array="False" size=""/>
+                        <output expression="&quot;enter ur pin:&quot;" newline="True"/>
+                        <input variable="pin"/>
+                        <if expression="pin=oneopin">
+                            <then>
+                                <assign variable="balance" expression="10000"/>
+                                <declare name="responce" type="String" array="False" size=""/>
+                                <output expression="&quot;do u want to withdraw (y/n)&quot;" newline="True"/>
+                                <input variable="responce"/>
+                                <if expression="responce=&quot;y&quot;">
+                                    <then>
+                                        <declare name="wamount" type="Real" array="False" size=""/>
+                                        <declare name="bamount" type="Real" array="False" size=""/>
+                                        <output expression="&quot;your present balance&quot;" newline="True"/>
+                                        <output expression="balance" newline="True"/>
+                                        <output expression="&quot;enter amount to withdraw:&quot;" newline="True"/>
+                                        <input variable="wamount"/>
+                                        <if expression="wamount&lt;balance-1000">
+                                            <then>
+                                                <assign variable="bamount" expression="balance-wamount"/>
+                                                <output expression="&quot;your current balance&quot;" newline="True"/>
+                                                <output expression="bamount" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;withdraw amount execeed minium balance&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <declare name="responce1" type="String" array="False" size=""/>
+                                        <output expression="&quot;do u want to deposite (y/n)&quot;" newline="True"/>
+                                        <input variable="responce1"/>
+                                        <if expression="responce1=&quot;y&quot;">
+                                            <then>
+                                                <declare name="damount" type="Real" array="False" size=""/>
+                                                <declare name="bamount" type="Real" array="False" size=""/>
+                                                <output expression="&quot;your present balance&quot;" newline="True"/>
+                                                <output expression="balance" newline="True"/>
+                                                <output expression="&quot;enter amount to deposit:&quot;" newline="True"/>
+                                                <input variable="damount"/>
+                                                <assign variable="bamount" expression="balance+damount"/>
+                                                <output expression="&quot;your current balance&quot;" newline="True"/>
+                                                <output expression="bamount" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <declare name="responce2" type="String" array="False" size=""/>
+                                                <output expression="&quot;do u want to check balance(y/n)&quot;" newline="True"/>
+                                                <input variable="responce2"/>
+                                                <if expression="responce2=&quot;y&quot;">
+                                                    <then>
+                                                        <output expression="&quot;your current balance&quot;" newline="True"/>
+                                                        <output expression="balance" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <declare name="responce3" type="String" array="False" size=""/>
+                                                        <output expression="&quot;do u want to chance pin(y/n)&quot;" newline="True"/>
+                                                        <input variable="responce3"/>
+                                                        <if expression="responce3=&quot;y&quot;">
+                                                            <then>
+                                                                <output expression="&quot;your current password&quot;" newline="True"/>
+                                                                <output expression="oneopin" newline="True"/>
+                                                                <output expression="&quot;enter new password&quot;" newline="True"/>
+                                                                <declare name="npin" type="Integer" array="False" size=""/>
+                                                                <input variable="npin"/>
+                                                                <assign variable="oneopin" expression="npin"/>
+                                                                <output expression="&quot;password sucessfully changed&quot;" newline="True"/>
+                                                            </then>
+                                                            <else>
+                                                                <output expression="&quot;thank you for coming to amal bank visit again&quot;" newline="True"/>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <output expression="&quot;incorrect password&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="accountno=02">
+                            <then>
+                                <declare name="pin" type="Integer" array="False" size=""/>
+                                <output expression="&quot;enter ur pin:&quot;" newline="True"/>
+                                <input variable="pin"/>
+                                <if expression="pin=twoopin">
+                                    <then>
+                                        <assign variable="balance" expression="20000"/>
+                                        <declare name="responce" type="String" array="False" size=""/>
+                                        <output expression="&quot;do u want to withdraw (y/n)&quot;" newline="True"/>
+                                        <input variable="responce"/>
+                                        <if expression="responce=&quot;y&quot;">
+                                            <then>
+                                                <declare name="wamount" type="Real" array="False" size=""/>
+                                                <declare name="bamount" type="Real" array="False" size=""/>
+                                                <output expression="&quot;your present balance&quot;" newline="True"/>
+                                                <output expression="balance" newline="True"/>
+                                                <output expression="&quot;enter amount to withdraw:&quot;" newline="True"/>
+                                                <input variable="wamount"/>
+                                                <if expression="wamount&lt;balance-1000">
+                                                    <then>
+                                                        <assign variable="bamount" expression="balance-wamount"/>
+                                                        <output expression="&quot;your current balance&quot;" newline="True"/>
+                                                        <output expression="bamount" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <output expression="&quot;withdraw amount execeed minium balance&quot;" newline="True"/>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else>
+                                                <declare name="responce1" type="String" array="False" size=""/>
+                                                <output expression="&quot;do u want to deposite (y/n)&quot;" newline="True"/>
+                                                <input variable="responce1"/>
+                                                <if expression="responce1=&quot;y&quot;">
+                                                    <then>
+                                                        <declare name="damount" type="Real" array="False" size=""/>
+                                                        <declare name="bamount" type="Real" array="False" size=""/>
+                                                        <output expression="&quot;your present balance&quot;" newline="True"/>
+                                                        <output expression="balance" newline="True"/>
+                                                        <output expression="&quot;enter amount to deposit:&quot;" newline="True"/>
+                                                        <input variable="damount"/>
+                                                        <assign variable="bamount" expression="balance+damount"/>
+                                                        <output expression="&quot;your current balance&quot;" newline="True"/>
+                                                        <output expression="bamount" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <declare name="responce2" type="String" array="False" size=""/>
+                                                        <output expression="&quot;do u want to check balance(y/n)&quot;" newline="True"/>
+                                                        <input variable="responce2"/>
+                                                        <if expression="responce2=&quot;y&quot;">
+                                                            <then>
+                                                                <output expression="&quot;your current balance&quot;" newline="True"/>
+                                                                <output expression="balance" newline="True"/>
+                                                            </then>
+                                                            <else>
+                                                                <declare name="responce3" type="String" array="False" size=""/>
+                                                                <output expression="&quot;do u want to chance pin(y/n)&quot;" newline="True"/>
+                                                                <input variable="responce3"/>
+                                                                <if expression="responce3=&quot;y&quot;">
+                                                                    <then>
+                                                                        <output expression="&quot;your current password&quot;" newline="True"/>
+                                                                        <output expression="twoopin" newline="True"/>
+                                                                        <output expression="&quot;enter new password&quot;" newline="True"/>
+                                                                        <declare name="npin" type="Integer" array="False" size=""/>
+                                                                        <input variable="npin"/>
+                                                                        <assign variable="twoopin" expression="npin"/>
+                                                                        <output expression="&quot;password sucessfully changed&quot;" newline="True"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <output expression="&quot;thank you for coming to amal bank visit again&quot;" newline="True"/>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;incorrect password&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="accountno=03">
+                                    <then>
+                                        <declare name="pin" type="Integer" array="False" size=""/>
+                                        <output expression="&quot;enter ur pin:&quot;" newline="True"/>
+                                        <input variable="pin"/>
+                                        <if expression="pin=threeopin">
+                                            <then>
+                                                <assign variable="balance" expression="15000"/>
+                                                <declare name="responce" type="String" array="False" size=""/>
+                                                <output expression="&quot;do u want to withdraw (y/n)&quot;" newline="True"/>
+                                                <input variable="responce"/>
+                                                <if expression="responce=&quot;y&quot;">
+                                                    <then>
+                                                        <declare name="wamount" type="Real" array="False" size=""/>
+                                                        <declare name="bamount" type="Real" array="False" size=""/>
+                                                        <output expression="&quot;your present balance&quot;" newline="True"/>
+                                                        <output expression="balance" newline="True"/>
+                                                        <output expression="&quot;enter amount to withdraw:&quot;" newline="True"/>
+                                                        <input variable="wamount"/>
+                                                        <if expression="wamount&lt;balance-1000">
+                                                            <then>
+                                                                <assign variable="bamount" expression="balance-wamount"/>
+                                                                <output expression="&quot;your current balance&quot;" newline="True"/>
+                                                                <output expression="bamount" newline="True"/>
+                                                            </then>
+                                                            <else>
+                                                                <output expression="&quot;withdraw amount execeed minium balance&quot;" newline="True"/>
+                                                            </else>
+                                                        </if>
+                                                    </then>
+                                                    <else>
+                                                        <declare name="responce1" type="String" array="False" size=""/>
+                                                        <output expression="&quot;do u want to deposite (y/n)&quot;" newline="True"/>
+                                                        <input variable="responce1"/>
+                                                        <if expression="responce1=&quot;y&quot;">
+                                                            <then>
+                                                                <declare name="damount" type="Real" array="False" size=""/>
+                                                                <declare name="bamount" type="Real" array="False" size=""/>
+                                                                <output expression="&quot;your present balance&quot;" newline="True"/>
+                                                                <output expression="balance" newline="True"/>
+                                                                <output expression="&quot;enter amount to deposit:&quot;" newline="True"/>
+                                                                <input variable="damount"/>
+                                                                <assign variable="bamount" expression="balance+damount"/>
+                                                                <output expression="&quot;your current balance&quot;" newline="True"/>
+                                                                <output expression="bamount" newline="True"/>
+                                                            </then>
+                                                            <else>
+                                                                <declare name="responce2" type="String" array="False" size=""/>
+                                                                <output expression="&quot;do u want to check balance(y/n)&quot;" newline="True"/>
+                                                                <input variable="responce2"/>
+                                                                <if expression="responce2=&quot;y&quot;">
+                                                                    <then>
+                                                                        <output expression="&quot;your current balance&quot;" newline="True"/>
+                                                                        <output expression="balance" newline="True"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <declare name="responce3" type="String" array="False" size=""/>
+                                                                        <output expression="&quot;do u want to chance pin(y/n)&quot;" newline="True"/>
+                                                                        <input variable="responce3"/>
+                                                                        <if expression="responce3=&quot;y&quot;">
+                                                                            <then>
+                                                                                <output expression="&quot;your current password&quot;" newline="True"/>
+                                                                                <output expression="threeopin" newline="True"/>
+                                                                                <output expression="&quot;enter new password&quot;" newline="True"/>
+                                                                                <declare name="npin" type="Integer" array="False" size=""/>
+                                                                                <input variable="npin"/>
+                                                                                <assign variable="threeopin" expression="npin"/>
+                                                                                <output expression="&quot;password sucessfully changed&quot;" newline="True"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <output expression="&quot;thank you for coming to amal bank visit again&quot;" newline="True"/>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;incorrecr password&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;please enter correct user name and password&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;visit again&quot;" newline="True"/>
+            </while>
+            <comment text="ac pin&#13;&#10;01 1234&#13;&#10;02 2234&#13;&#10;03 3234"/>
+        </body>
+    </function>
+</flowgorithm>
