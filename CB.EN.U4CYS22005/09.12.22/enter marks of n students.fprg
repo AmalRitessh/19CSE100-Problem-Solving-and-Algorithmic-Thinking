@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ashok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 10:35:26 AM"/>
+        <attribute name="created" value="YXNob2s7QU1BTFJJVEVTU0g7MjAyMi0xMi0wOTswOTo0Njo1MyBBTTsyNjM3"/>
+        <attribute name="edited" value="YXNob2s7QU1BTFJJVEVTU0g7MjAyMi0xMi0wOTsxMDozNToyNiBBTTsyOzI3MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nstudents" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter no of students&quot;" newline="True"/>
+            <input variable="nstudents"/>
+            <declare name="drollno, dmarks, dtotal, daverage, i, english, physics, chemistry, bio, computer" type="Integer" array="False" size=""/>
+            <declare name="rollno, marks, average" type="Integer" array="True" size="nstudents"/>
+            <declare name="allmarks" type="String" array="True" size="nstudents"/>
+            <for variable="i" start="0" end="nstudents-1" direction="inc" step="1">
+                <declare name="smark" type="Integer" array="True" size="5"/>
+                <output expression="&quot;enter roll number:&quot;" newline="True"/>
+                <input variable="drollno"/>
+                <assign variable="rollno[i]" expression="drollno"/>
+                <output expression="&quot;enter english marks:&quot;" newline="True"/>
+                <input variable="english"/>
+                <assign variable="smark[0]" expression="english"/>
+                <output expression="&quot;enter physics mark:&quot;" newline="True"/>
+                <input variable="physics"/>
+                <assign variable="smark[1]" expression="physics"/>
+                <output expression="&quot;enter chemistry mark:&quot;" newline="True"/>
+                <input variable="chemistry"/>
+                <assign variable="smark[2]" expression="chemistry"/>
+                <output expression="&quot;enter bio mark:&quot;" newline="True"/>
+                <input variable="bio"/>
+                <assign variable="smark[3]" expression="bio"/>
+                <output expression="&quot;enter computer mark:&quot;" newline="True"/>
+                <input variable="computer"/>
+                <assign variable="smark[4]" expression="computer"/>
+                <assign variable="marks[i]" expression="english+physics+chemistry+bio+computer"/>
+                <assign variable="average[i]" expression="(english+physics+chemistry+bio+computer)/5"/>
+                <assign variable="allmarks[i]" expression="&quot;english:&quot;&amp;english&amp;&quot; physics:&quot;&amp;physics&amp;&quot; chemistry:&quot;&amp;chemistry&amp;&quot; bio:&quot;&amp;bio&amp;&quot; computer:&quot;&amp;computer"/>
+            </for>
+            <for variable="i" start="0" end="nstudents-1" direction="inc" step="1">
+                <output expression="&quot;roll no: &quot;&amp;rollno[i]" newline="True"/>
+                <output expression="&quot;marks: &quot;&amp;allmarks[i]" newline="True"/>
+                <output expression="&quot;total: &quot;&amp;marks[i]" newline="True"/>
+                <output expression="&quot;average: &quot;&amp;average[i]" newline="True"/>
+                <output expression="&quot;***************************************************************************************&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

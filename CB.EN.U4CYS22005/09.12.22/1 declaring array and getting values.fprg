@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ashok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 09:45:22 AM"/>
+        <attribute name="created" value="YXNob2s7QU1BTFJJVEVTU0g7MjAyMi0xMi0wOTswOToxOToxMiBBTTsyNjMy"/>
+        <attribute name="edited" value="YXNob2s7QU1BTFJJVEVTU0g7MjAyMi0xMi0wOTswOTo0NToyMiBBTTsxOzI3NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Integer" array="True" size="10"/>
+            <declare name="input, i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;enter number &quot;&amp;i+1&amp;&quot; :&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="number[i]" expression="input"/>
+            </for>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;number &quot;&amp;i+1&amp;&quot; is &quot;&amp; number[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
