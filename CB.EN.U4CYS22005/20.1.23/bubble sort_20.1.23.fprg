@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 11:01:19 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MjsyMDIzLTAxLTIwOzA5OjEwOjMzIEFNOzMwNDc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MjsyMDIzLTAxLTIwOzA5OjE4OjIxIEFNOzI7Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MjsyMDIzLTAxLTIwOzA5OjAzOjQ1IEFNO3NlbGVjdCBzb3J0LmZwcmc7NzkzNg=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MjsyMDIzLTAxLTIwOzExOjAxOjE5IEFNOzEwOzMyMDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="BUBBLE SORT"/>
+            <comment text="all the variables are declared here !"/>
+            <declare name="i, j, w, d, k" type="Integer" array="False" size=""/>
+            <comment text="an array is declared to save the values"/>
+            <declare name="a" type="Integer" array="True" size="5"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;NOTE: only 5 values can be entered by user ;)&quot;" newline="True"/>
+                <output expression="&quot;enter &quot;&amp;i+1&amp;&quot; no:&quot;" newline="True"/>
+                <comment text="getting values from user&#13;&#10;(can only get 5 input from user ;) )"/>
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <comment text="the maxium or minum value is taken here!!"/>
+                <for variable="j" start="0" end="3" direction="inc" step="1">
+                    <assign variable="w" expression="a[j]"/>
+                    <assign variable="d" expression="a[j+1]"/>
+                    <comment text="the following min or max value is decited by the following command&#13;&#10;"/>
+                    <if expression="a[j]&gt;a[j+1]">
+                        <then>
+                            <comment text="swaping takes place here"/>
+                            <assign variable="a[j+1]" expression="w"/>
+                            <assign variable="a[j]" expression="d"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <comment text="the out put is printed here!"/>
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

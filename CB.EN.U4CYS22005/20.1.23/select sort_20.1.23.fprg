@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 11:01:18 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MjsyMDIzLTAxLTIwOzA5OjAzOjQ1IEFNOzMwNTI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNTsyMDIyMjNNQVlDMDA0MjsyMDIzLTAxLTIwOzExOjAxOjE4IEFNOzc7MzE1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="SELECTION SORT"/>
+            <comment text="all variables are declared here !"/>
+            <declare name="i, j, w, d, k" type="Integer" array="False" size=""/>
+            <comment text="an array is declared to save the values"/>
+            <declare name="a" type="Integer" array="True" size="5"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;NOTE: only 5 values can be entered by user ;)&quot;" newline="True"/>
+                <output expression="&quot;enter &quot;&amp;i+1&amp;&quot; no:&quot;" newline="True"/>
+                <comment text="getting valuse from user&#13;&#10;(can only get 5 input form user ;) )"/>
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <comment text="this loop compares the values to the neibghor value, and sawps its content"/>
+                <for variable="j" start="0" end="4" direction="inc" step="1">
+                    <assign variable="w" expression="a[i]"/>
+                    <assign variable="d" expression="a[j]"/>
+                    <if expression="a[i]&gt;a[j]">
+                        <then>
+                            <comment text="sawping takes place here"/>
+                            <assign variable="a[j]" expression="w"/>
+                            <assign variable="a[i]" expression="d"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <comment text="the output is printed here!!"/>
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
